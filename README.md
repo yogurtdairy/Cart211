@@ -14,7 +14,7 @@
 
 <body style="font-family: Arial, Helvetica, sans-serif; padding: 20px;">
     <nav>
-        <a href="index.html" style="text-decoration: none; color:black;">web 1.0</a>  |  <a href="web-2.0.html" style="text-decoration: none; color:black;">web 2.0</a>  | <a href="web-3.0.html" style="text-decoration: none; color:black;">web 3.0</a>  |  <a href="web-4.0.html" style="text-decoration: none; color:black;">web 4.0</a>
+        <a href="index.html" style="text-decoration: none; color:rgb(255, 136, 17);">web 1.0</a>  |  <a href="web-2.0.html" style="text-decoration: none; color:black;">web 2.0</a>  | <a href="web-3.0.html" style="text-decoration: none; color:black;">web 3.0</a>  |  <a href="web-4.0.html" style="text-decoration: none; color:black;">web 4.0</a>
     </nav>
     <header style="margin-right: 250px; margin-left: 250px;">
         <h1>Where does the Web come from?</h1>
