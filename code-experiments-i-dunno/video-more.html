@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .size-controls {
+            margin-bottom: 15px;
+        }
+
+        .size-controls button {
+            padding: 8px 14px;
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        /*------
+        general video player styles
+        -------*/
+
+        video {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        video.small {
+            width: 320px;
+        }
+
+        video.medium {
+            width: 480px;
+        }
+
+        video.large {
+            width: 720px;
+        }
+
+        video.full {
+            width: 100%;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Wonderful mating dance</h1>
+    <p> WATCH WATCH WATCH the little gay owl is performing his majestic mating ritual. This is a once in a lifetime opportunity.</p>
+
+    <div class="size-controls">
+
+        <strong>Video Size:</strong>
+        <button onclick="changeSize('small')">
+            Small
+        </button>
+
+        <button onclick="changeSize('medium')">
+            Medium
+        </button>
+
+        <button onclick="changeSize('large')">
+            Large
+        </button>
+
+        <button onclick="changeSize('full')">
+            Full Width
+        </button>
+
+    </div>
+
+    <video id="myVideo" class="full" controls>
+
+        <source src="matingdance.mp4" type="video/mp4">
+        Sorry your browser sucks
+    </video>
+
+    <script>
+        function changeSize(size) {
+        const video = document.getElementById("myVideo");
+
+        video.classList.remove(
+            "small",
+            "medium",
+            "large",
+            "full" 
+        );
+        
+        video.classList.add(size);
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        /* Styles the video player*/
+        video {
+            display:block; /* Places the video on its own line*/
+            width: 100%; /* Makes the video fill the available content width*/
+            aspect-ratio: 16 / 9;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+<h1> Amazing mating dance</h1>
+<p>Watch! Watch! Watch!</p>
+
+<!-- Creates video player with built-in playback-->
+<video controls>
+    
+    <!-- loads the mp4 video file from same folder as this HTML file-->
+     <source src="matingdance.mp4" type="video/mp4">
+     <!-- displays this message if browser cannot play vid-->
+      Sorry,your browser cannot play this video.
+
+
+
+</video>
+
+</body>
+
+
+</html>
