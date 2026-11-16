@@ -247,6 +247,15 @@ footer {
 
 }
 
+.pict4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -900px;
+    margin-bottom: -100px;
+
+}
+
 figcaption {
     text-align: left;
     padding: 12px;
@@ -286,6 +295,14 @@ figcaption {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
+
+.im4 {
+    width: 400px;
+    /* Increases width to 600px */
+    height: auto;
+    /* Scales height proportionally */
+}
+
 
 .gridstuff img {
     width: 100%;
