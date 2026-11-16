@@ -36,10 +36,15 @@ body.organs2body {
 }
 
 h1 {
-    padding-top: 30px;
+    padding: 4px 12px;
+    border-radius: 12px;
     font-family: "Rubik Maps", sans-serif;
     font-size: 45px;
     font-weight: lighter;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
 
 }
 
@@ -179,6 +184,11 @@ footer {
     font-family: "Rubik Maps", sans-serif;
     font-size: 50px;
     transition: transform 0.3s ease;
+    padding: 4px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .deeperbutton:hover {
