@@ -281,12 +281,30 @@ figcaption {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    /* Prevents image distortion if height is fixed */
     display: block;
-    /* Removes extra bottom whitespace */
 }
 
+.undergrid {
+    margin-top: 40px;
+    display: flex;
+    font-family: "Goldman", sans-serif;
+    font-size: 1.5em;
+    align-items: center;
+    gap: 20px;
+}
 
+.undergrid img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.eating {
+    display: flex;
+    font-family: "Goldman", sans-serif;
+
+}
 
 
 
