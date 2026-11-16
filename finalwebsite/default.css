@@ -290,7 +290,7 @@ figcaption {
 .im3 {}
 
 .gridstuff {
-    margin-top: 200px;
+    margin-top: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
