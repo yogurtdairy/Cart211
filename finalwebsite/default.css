@@ -14,7 +14,8 @@ body.skin2body {
 }
 
 body.organs2body {
-    background: url("assets/mouthopen2.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgb(0, 0, 0, 0.25)),
+        url("assets/mouthopen3.png");
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
@@ -318,11 +319,12 @@ figcaption {
     font-size: 1.5em;
     align-items: center;
     gap: 20px;
+    color: white;
 }
 
 .undergrid img {
-    aspect-ratio: 1 / 1;
     width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
 
