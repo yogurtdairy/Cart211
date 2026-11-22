@@ -2,8 +2,41 @@
 
 body {}
 
+body.skin1body {
+    background: linear-gradient(to right,
+            #00000023 0%,
+            /* Left side color */
+            transparent 20%,
+            /* Fades out by 20% */
+            transparent 80%,
+            /* Stays clear until 80% */
+            #00000023 100%
+            /* Right side color */
+        ),
+        url("assets/testing6-removebg-preview.png");
+
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
 body.skin2body {
-    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 1)),
+    background: linear-gradient(to right,
+            #00000023 0%,
+            /* Left side color */
+            transparent 20%,
+            /* Fades out by 20% */
+            transparent 80%,
+            /* Stays clear until 80% */
+            #00000023 100%
+            /* Right side color */
+        ), linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 1)),
         url("assets/background1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -14,20 +47,22 @@ body.skin2body {
 }
 
 body.organs2body {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgb(0, 0, 0, 0.25)),
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0, 0, 0, 0.10)),
         url("assets/mouthopen3.png");
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
     background-size: cover;
 }
 
-.menu1 {}
+body.cellsbody {
+    background:
+        url("assets/calls.png");
+    background-color: black;
+    background-size: cover;
 
-.menu1 a {
-    display: block;
 }
-
 
 /* MAIN CONTENT AND HEADINGS */
 
@@ -49,14 +84,40 @@ h1 {
 
 }
 
+h1.skinheader {
+    margin-bottom: 50px;
+}
+
 h2 {
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    font-family: "Goldman", sans-serif;
+    margin-left: 100px;
+    font-weight: lighter;
 }
 
-.stories_title {}
+h2.skincaption {
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6em;
+    font-family: "Goldman", sans-serif;
+    font-weight: lighter;
+
+}
+
+.skinstuff {
+
+    display: flex;
+    justify-content: center;
+    margin-top: -450px;
+    margin-bottom: -100px;
+}
+
+
+
 
 
 .intro {
@@ -123,13 +184,6 @@ h2 {
 
 h3 {}
 
-/* NAVIGATION BAR */
-
-nav {}
-
-.logo {}
-
-nav a {}
 
 nav a:hover {
     color: darkgrey;
@@ -299,9 +353,8 @@ figcaption {
 
 .im4 {
     width: 400px;
-    /* Increases width to 600px */
     height: auto;
-    /* Scales height proportionally */
+
 }
 
 
@@ -316,10 +369,25 @@ figcaption {
     margin-top: 40px;
     display: flex;
     font-family: "Goldman", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.9em;
     align-items: center;
     gap: 20px;
     color: white;
+    text-shadow: 3px 3px 0px #ff4757;
+    justify-content: center;
+}
+
+.undergrid2 {
+    margin-top: 40px;
+    display: flex;
+    font-family: "Goldman", sans-serif;
+    font-size: 1.9em;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-shadow: 3px 3px 0px #ff4757;
+    justify-content: center;
+    margin-bottom: 500px;
 }
 
 .undergrid img {
@@ -327,8 +395,83 @@ figcaption {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
+    border-radius: 12px;
 
 }
+
+.undergrid2 img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+
+}
+
+.cellgridstuff {
+    column-count: 3;
+    /* Number of vertical columns */
+    column-gap: 16px;
+}
+
+.cellgridstuff img {
+    width: 100%;
+    height: auto;
+    /* Preserves natural aspect ratio without cropping */
+    display: block;
+    /* Removes bottom whitespace */
+    margin-bottom: 16px;
+    break-inside: avoid;
+    /* Prevents images from splitting across columns */
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .cellgridstuff {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .cellgridstuff {
+        column-count: 1;
+    }
+}
+
+.pulse-image {
+
+    animation: pulse-scale 2s infinite ease-in-out;
+}
+
+@keyframes pulse-scale {
+
+    0% {
+        transform: scale(0.97);
+    }
+
+    14% {
+        transform: scale(1);
+    }
+
+    28% {
+        transform: scale(0.97);
+    }
+
+    42% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(0.97);
+    }
+
+}
+
+
 
 .eating {
     display: flex;
@@ -368,7 +511,39 @@ figcaption {
     font-size: 0.8em;
 }
 
-/* Enable cross-document transitions */
 @view-transition {
     navigation: auto;
+}
+
+
+::view-transition-old(root) {
+    animation: 0.4s cubic-bezier(0.4, 0, 0.2, 1) both zoomOut;
+}
+
+::view-transition-new(root) {
+    animation: 0.4s cubic-bezier(0.4, 0, 0.2, 1) both zoomIn;
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.20);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.80);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
