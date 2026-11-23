@@ -46,6 +46,15 @@ body.skin2body {
 
 }
 
+body.tbdbody {
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0, 0, 0, 0.10)),
+        url("assets/Screenshot\ 2026-11-22\ 182904.png");
+    background-size: cover;
+
+}
+
+
+
 body.organs2body {
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0, 0, 0, 0.10)),
         url("assets/mouthopen3.png");
@@ -129,6 +138,7 @@ h2.skincaption {
 .introstuff {
     font-size: 1.4em;
     font-family: "Goldman", sans-serif;
+    cursor: not-allowed;
 }
 
 
@@ -140,6 +150,7 @@ h2.skincaption {
     border-radius: 30px;
     margin-top: -10px;
 
+
 }
 
 .second {
@@ -150,6 +161,7 @@ h2.skincaption {
 .secondstuff {
     font-size: 1.4em;
     font-family: "Goldman", sans-serif;
+    cursor: not-allowed;
 }
 
 .secondstuff .im4 {
@@ -166,11 +178,13 @@ h2.skincaption {
     justify-content: flex-end;
     margin-top: -100px;
 
+
 }
 
 .thirdstuff {
     font-size: 1.4em;
     font-family: "Goldman", sans-serif;
+    cursor: not-allowed;
 }
 
 .thirdstuff .im5 {
@@ -280,9 +294,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 99.4%;
     align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-
+    margin-top: -50px;
 
 }
 
@@ -331,7 +343,7 @@ figcaption {
 
 /* Image 1: upper left position */
 .im1 {
-    width: 300px;
+    width: 250px;
     height: 100%;
 }
 
@@ -410,17 +422,14 @@ figcaption {
 
 .cellgridstuff {
     column-count: 3;
-    /* Number of vertical columns */
     column-gap: 16px;
 }
 
 .cellgridstuff img {
     width: 100%;
     height: auto;
-    /* Preserves natural aspect ratio without cropping */
     display: block;
-    /* Removes bottom whitespace */
-    margin-bottom: 16px;
+
     break-inside: avoid;
     /* Prevents images from splitting across columns */
     justify-content: space-between;
